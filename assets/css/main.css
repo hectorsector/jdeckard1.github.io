@@ -3338,14 +3338,21 @@ input, select, textarea {
 
 /* Wrapper */
 
-	#wrapper > * > .inner {
+	#wrapper > * > .innercontent {
 		width: 100%;
 		/* max-width: 68em; */
 		margin: 0 auto;
 		/* 	padding: 0 2.5em; */
 	}
 
-	#wrapper > * > .inner > .content {
+	#wrapper > * > .inner {
+		width: 100%;
+		max-width: 68em;
+		margin: 0 auto;
+		padding: 0 2.5em;
+	}
+
+	#wrapper > * > .innercontent > .content {
 		width: 100%;
 		max-width: 68em;
 		margin: 0 auto;
