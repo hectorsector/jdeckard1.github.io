@@ -19,8 +19,6 @@ $(function () {
       $this = $('#sendMessageButton')
       $this.prop('disabled', true) // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: 'https://formspree.io/jdeckard1@comcast.net',
-        type: 'POST',
         data: {
           name: name,
           phone: phone,
@@ -37,7 +35,7 @@ $(function () {
             .append('<strong>Your message has been sent. </strong>')
           $('#success > .alert-success')
             .append('</div>')
-          //clear all fields
+          // clear all fields
           $('#contactForm').trigger('reset')
         },
         error: function () {
@@ -47,7 +45,7 @@ $(function () {
             .append('</button>')
           $('#success > .alert-danger').append($('<strong>').text('Sorry ' + firstName + ', it seems that my mail server is not responding. Please try again later!'))
           $('#success > .alert-danger').append('</div>')
-          //clear all fields
+          // clear all fields
           $('#contactForm').trigger('reset')
         },
         complete: function () {
@@ -68,7 +66,7 @@ $(function () {
   })
 })
 
-/*When clicking on Full hide fail/success boxes */
+/* When clicking on Full hide fail/success boxes */
 $('#name').focus(function () {
   $('#success').html('')
 })
