@@ -431,7 +431,7 @@ header.masthead .intro-text .intro-heading {
 .timeline > li {
   position: relative;
   min-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .timeline > li:after, .timeline > li:before {
@@ -529,7 +529,7 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
   .timeline > li .timeline-panel {
     float: left;
@@ -556,6 +556,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 992px) {
+  header.masthead {
+    margin-top: 100px
+  }
+
   .timeline > li {
     min-height: 150px;
   }
@@ -620,7 +624,7 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #003c7a;
-  background-image: url("../img/map-image.png");
+  /* background-image: url("../img/map-image.png"); */
   background-repeat: no-repeat;
   background-position: center;
 }
