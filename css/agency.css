@@ -319,7 +319,13 @@ header.masthead .intro-text .intro-heading {
   z-index: 2;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 640px) {
+  #portfolio .portfolio-item .portfolio-caption {
+    min-height: 30vh;
+  }
+}
+
+@media (min-width: 767px) {  
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
@@ -710,4 +716,8 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #00acaf;
+}
+
+.description {
+  text-align: justify;
 }
